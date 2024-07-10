@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Grand Villa",
+        "segment_name": "Residential",
+        "description": "A stunning grand villa with breathtaking ocean views, modern amenities, and exquisite interiors.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Beverly Hills, CA",
+        "facilities": ["living room", "swimming pool", "kitchen", "home theater", "garden"],
+        "image": "https://i.ibb.co/d2S8Vj1/3d-house-model-with-modern-architecture.jpg"
+    },
+    {
+        "id": 2,
+        "estate_title": "Luxury Penthouse",
+        "segment_name": "Residential",
+        "description": "A luxurious penthouse with panoramic city views, top-notch facilities, and unparalleled comfort.",
+        "price": "$3,200,000",
+        "status": "sale",
+        "area": "3500 sq ft",
+        "location": "New York, NY",
+        "facilities": ["living room", "swimming pool", "kitchen", "rooftop terrace", "gym"],
+        "image": " https://i.ibb.co/SwtzbzB/pexels-perqued-13203188.jpg"
+    },
+    {
+        "id": 3,
+        "estate_title": "Modern Apartment",
+        "segment_name": "Residential",
+        "description": "A sleek and modern apartment with contemporary design, high-end finishes, and a prime location.",
+        "price": "$1,500,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "San Francisco, CA",
+        "facilities": ["living room", "swimming pool", "kitchen", "fitness center", "parking"],
+        "image": "https://i.ibb.co/PYx0PSZ/3d-electric-car-building.jpg"
+    },
+    {
+        "id": 4,
+        "estate_title": "Beachfront Mansion",
+        "segment_name": "Residential",
+        "description": "An expansive beachfront mansion with direct access to the beach, luxurious amenities, and stunning ocean views.",
+        "price": "$8,000,000",
+        "status": "sale",
+        "area": "7500 sq ft",
+        "location": "Malibu, CA",
+        "facilities": ["living room", "swimming pool", "kitchen", "private beach", "spa"],
+        "image": "https://i.ibb.co/9V6c6zG/colonial-style-house-night-scene.jpg"
+    },
+    {
+        "id": 5,
+        "estate_title": "City Loft",
+        "segment_name": "Residential",
+        "description": "A trendy city loft with modern design, high ceilings, and a convenient downtown location.",
+        "price": "$900,000",
+        "status": "sale",
+        "area": "1200 sq ft",
+        "location": "Chicago, IL",
+        "facilities": ["living room", "kitchen", "rooftop terrace", "gym"],
+        "image": " https://i.ibb.co/Zxtx5d3/luxury-house-real-estate-sale-property-generative-ai.jpg"
+    },
+    {
+        "id": 6,
+        "estate_title": "Suburban House",
+        "segment_name": "Residential",
+        "description": "A spacious suburban house with a large backyard, perfect for families seeking tranquility and comfort.",
+        "price": "$750,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Austin, TX",
+        "facilities": ["living room", "swimming pool", "kitchen", "garage"],
+        "image": "https://i.ibb.co/z6KsD3n/vecteezy-new-luxurious-house-visualized-in-27940643.jpg"
+    },
+    {
+        "id": 7,
+        "estate_title": "Mountain Retreat",
+        "segment_name": "Residential",
+        "description": "A serene mountain retreat with stunning views, cozy interiors, and outdoor recreational facilities.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Aspen, CO",
+        "facilities": ["living room", "kitchen", "fireplace", "outdoor patio"],
+        "image": "https://i.ibb.co/8NmL0Nt/webaliser-TPTXZd9m-Oo-unsplash.jpg"
+    },
+    {
+        "id": 8,
+        "estate_title": "Urban Condo",
+        "segment_name": "Residential",
+        "description": "A chic urban condo with stylish design, great amenities, and a prime city center location.",
+        "price": "$850,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Seattle, WA",
+        "facilities": ["living room", "kitchen", "fitness center", "parking"],
+        "image": "https://i.ibb.co/VC2hKWF/brian-babb-Xbw-Hrt87m-Q0-unsplash.jpg"
+    },
+    {
+        "id": 9,
+        "estate_title": "Country Estate",
+        "segment_name": "Residential",
+        "description": "A grand country estate with expansive grounds, luxurious interiors, and a peaceful rural setting.",
+        "price": "$2,800,000",
+        "status": "sale",
+        "area": "6000 sq ft",
+        "location": "Nashville, TN",
+        "facilities": ["living room", "swimming pool", "kitchen", "barn", "garden"],
+        "image": "https://i.ibb.co/mbpVyxG/travel-cents-WYLu-NY5-JG4-E-unsplash.jpg"
+    }
+]    
+
