@@ -3,16 +3,10 @@ import { Link } from "react-router-dom";
 const SingleRealstate = (state) => {
   const {
     id,
-    area,
     description,
     estate_title,
-    image,
-    location,
     price,
-    segment_name,
-    status,
-    facilities,
-  } = state.state;
+    image,} = state.state;
   console.log(id);
   return (
     <div className="col-span-1">
@@ -30,15 +24,17 @@ const SingleRealstate = (state) => {
             {estate_title}
           </h2>
         </div>
-        {
-          description.length > 100 ? <p className="dark:text-gray-800">{ description.slice(0,50) }
-          
-            </p>
-            :
-            <p>{description}</p>
-        }
+        {description.length > 100 ? (
+          <p className="dark:text-gray-800">{description.slice(0, 50)}</p>
+        ) : (
+          <p>{description}</p>
+        )}
         <div className="mt-2">
-          <Link to={`/RealState/${id}`} ><button className="btn bg-blue-700 text-white ">View Property</button></Link>
+          <Link to={`/RealState/${id}`}>
+            <button className="btn bg-blue-700 text-white ">
+              View Property
+            </button>
+          </Link>
         </div>
       </div>
     </div>
