@@ -4,13 +4,11 @@ import auth from "../../Firebase.config";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-  const { user , logOutUser } = useContext(AuthContext);
+  const { user, logOutUser } = useContext(AuthContext);
 
-  const handleLogOut = ()=>{
-    logOutUser(auth)
-    .then()
-    .catch()
-  }
+  const handleLogOut = () => {
+    logOutUser(auth).then().catch();
+  };
   const links = (
     <>
       <Link to="/">
@@ -64,28 +62,31 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end" >
+        <div className="navbar-end">
           <span>
-            {
-              user ? <div className="avatar">
-              <div className="w-12 mr-4 my-auto rounded-full">
-                <img src={user.photoURL} />
+            {user ? (
+              <div className="avatar">
+                <div className="w-12 mr-4 my-auto rounded-full">
+                  <img src={user.photoURL} />
+                </div>
               </div>
-            </div>: <span></span>
-            }
+            ) : (
+              <span></span>
+            )}
           </span>
           {user ? (
-            <Link  >
-              <a className="btn" onClick={handleLogOut} >Log Out</a>
+            <Link>
+              <a className="btn" onClick={handleLogOut}>
+                Log Out
+              </a>
             </Link>
           ) : (
             <Link to="/LogIn">
-              <a className="btn" >Log In</a>
+              <a className="btn">Log In</a>
             </Link>
           )}
         </div>
       </div>
-      ;
     </div>
   );
 };

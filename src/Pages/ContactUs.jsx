@@ -1,9 +1,7 @@
 
 const ContactUs = () => {
     return (
-        <div>
-            
-        </div>
+        <div></div>
     );
 };
 

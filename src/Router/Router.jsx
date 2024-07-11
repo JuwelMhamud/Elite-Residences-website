@@ -4,15 +4,26 @@ import Estate from "../Pages/Estate";
 import ContactUs from "../Pages/ContactUs";
 import Register from "../Pages/Register";
 import LogIn from "../Pages/LogIn";
+import RootHome from "../Pages/RootHome";
+
 
 const Router = createBrowserRouter([
     {
         path:'/',
-        element:<Home/>,
+        element:<RootHome/>,
         children:[
             {
-                path:'/Estate',
-                element:<Estate/>
+                path:'/',
+                element:<Home/>,
+                loader: ()=> fetch('../../public/Realstate.json'),
+
+            },
+            
+            {
+                path:'/RealState/:id',
+                element:<Estate/>,
+                loader: ()=> fetch('../../public/Realstate.json'),
+                
             },
             {
                 path:'/ContactUs',

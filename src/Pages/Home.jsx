@@ -1,15 +1,20 @@
-import { Outlet } from 'react-router-dom';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+import { useLoaderData } from "react-router-dom";
+import SingleRealstate from "../Components/SingleRealstate";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
-        </div>
-    );
+  const RealState = useLoaderData();
+
+  console.log(RealState);
+
+  return (
+    <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-4">
+        {RealState.map((state) => (
+          <SingleRealstate key={state.id} state={state} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Home;
