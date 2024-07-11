@@ -6,7 +6,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { createUser } = useContext(AuthContext);
-  const [logInError, setLogInError] = useState();
+  // const [logInError, setLogInError] = useState()
 
   const handleRegister = (e) => {
     e.preventDefault();
