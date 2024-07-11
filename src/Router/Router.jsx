@@ -5,6 +5,7 @@ import Register from "../Pages/Register";
 import LogIn from "../Pages/LogIn";
 import RootHome from "../Pages/RootHome";
 import ContactUs from './../Pages/ContactUs';
+import PrivateRoute from './PrivateRoute';
 
 
 const Router = createBrowserRouter([
@@ -21,7 +22,7 @@ const Router = createBrowserRouter([
             
             {
                 path:'/RealState/:id',
-                element:<Estate/>,
+                element:<PrivateRoute><Estate/></PrivateRoute>,
                 loader: ()=> fetch('../../public/Realstate.json'),
                 
             },

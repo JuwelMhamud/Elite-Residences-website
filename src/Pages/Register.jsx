@@ -15,16 +15,16 @@ const Register = () => {
     const password = form.get("password");
     console.log(email, password);
 
-    if (password.length > 6) {
-      setLogInError("Password must have at least 6 characters or longer");
-      return;
-    } else if (!/[A-Z]/.test(password)) {
-      setLogInError("Password must contain one UpperCase  letter");
-      return;
-    } else if (!/[a-z]/.test(password)) {
-      setLogInError("Password must contain one LowerCase letter");
-      return;
-    }
+    // if (password.length > 6) {
+    //   setLogInError("Password must have at least 6 characters or longer");
+    //   return;
+    // } else if (!/[A-Z]/.test(password)) {
+    //   setLogInError("Password must contain one UpperCase  letter");
+    //   return;
+    // } else if (!/[a-z]/.test(password)) {
+    //   setLogInError("Password must contain one LowerCase letter");
+    //   return;
+    // }
 
     createUser(email, password)
       .then((result) => console.log(result.user))
@@ -91,11 +91,11 @@ const Register = () => {
                 </span>
               </div>
             </div>
-            <div>
+            {/* <div>
               {logInError && (
                 <p className="text-red-800 font-bold">{logInError}</p>
               )}
-            </div>
+            </div> */}
 
             <button className="block w-full p-3 text-center rounded-sm text-gray-900 dark:text-gray-50 bg-violet-400 dark:bg-violet-600" type="submit">
               Register
